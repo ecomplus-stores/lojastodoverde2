@@ -1,32 +1,25 @@
 {
-  "marketing_stripe": {
-    "text": "Aproveite nossos descontos de até 50%!",
-    "link": "/promotion"
-  },
-  "contacts_stripe": {
-    "pages": [
-      {
-        "title": "Sobre nós",
-        "link": "/pages/sobre-nos"
-      },
-      {
-        "title": "Esta loja é um PWA",
-        "link": "/posts/esta-loja-e-um-pwa"
-      }
-    ],
-    "phone_wpp": true,
-    "socials": true
-  },
   "categories_list": {
     "featured": [],
-    "random": 6,
-    "full_width": false
+    "random": 0,
+    "full_width": true
   },
-  "centralized_logo": false,
-  "desktop_megamenu": false,
-  "search_input": true,
-  "alphabetical_order_submenu": false,
-  "full_width_submenu": false,
   "menu_all_departments": false,
-  "name_all_departments": ""
+  "centralized_logo": false,
+  "marketing_stripe": {
+    "text": "Dúvidas ? Clique aqui para ser atendido",
+    "link": "https://wa.me/5511920067879?text=Ol%C3%A1,%20tenho%20uma%20d%C3%BAvida%20ao%20comprar%20no%20site%20!",
+    "background": "#000000",
+    "color": "#ffffff"
+  },
+  "alphabetical_order_submenu": true,
+  "name_all_departments": "",
+  "search_input": true,
+  "desktop_megamenu": false,
+  "full_width_submenu": true,
+  "contacts_stripe": {
+    "pages": [],
+    "phone_wpp": true,
+    "socials": true
+  }
 }

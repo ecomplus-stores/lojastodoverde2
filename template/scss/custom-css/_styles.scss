@@ -1,7 +1,17 @@
 .address-form__name label {
   font-size: 0
 }
-.address-form__name label {
+.address-form__name label:after {
   font-size: 20px !important;
   content: 'Nome do guia'
+}
+
+.address-form-compl {
+  font-size: 20px !important;
+  content: 'ônibus e estacionamento'
+}
+
+.address-form-ref {
+  font-size: 20px !important;
+  content: 'Data e hora'
 }

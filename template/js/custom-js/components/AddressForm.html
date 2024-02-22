@@ -4,17 +4,14 @@
   novalidate
 >
   <div class="form-group address-form__name">
-    <label for="address-form-name">
-      {{ i19recipient }}
+    <label>
+      Nome do guia do ônibus
     </label>
     <input
       type="text"
       pattern="[^\d\s]{2,}.*"
       class="form-control"
-      id="address-form-name"
-      v-model="localAddress.name"
-      :placeholder="i19name"
-      required
+      id="address-form-name" 
     >
   </div>
 

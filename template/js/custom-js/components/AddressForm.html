@@ -5,13 +5,16 @@
 >
   <div class="form-group address-form__name">
     <label for="address-form-name">
-      Nome do guia do ônibus
+      {{ i19recipient }}
     </label>
     <input
       type="text"
       pattern="[^\d\s]{2,}.*"
       class="form-control"
-      id="address-form-name" 
+      id="address-form-name"
+      v-model="localAddress.name"
+      :placeholder="i19name"
+      required
     >
   </div>
 
@@ -93,7 +96,7 @@
       <div class="form-row">
         <div class="form-group col-lg-6">
           <label for="address-form-compl">
-            Ônibus e estacionamento
+            {{ i19complement }}
           </label>
           <input
             type="text"
@@ -106,7 +109,7 @@
 
         <div class="form-group col-lg-6">
           <label for="address-form-ref">
-            Data e hora
+            {{ i19reference }}
           </label>
           <input
             type="text"
@@ -121,7 +124,7 @@
       <div class="form-row">
         <div class="form-group col-lg-6">
           <label for="address-form-street">
-           Rua onde o onibus está
+            {{ i19street }}
           </label>
           <input
             type="text"
@@ -136,7 +139,7 @@
 
         <div class="form-group col-lg-6">
           <label for="address-form-borough">
-            Bairro onde o onibus está
+            {{ i19borough }}
           </label>
           <input
             type="text"
@@ -152,7 +155,7 @@
       <div class="form-row">
         <div class="form-group col-lg-6 col-7">
           <label for="address-form-city">
-            Sua Cidade
+            {{ i19city }}
           </label>
           <input
             type="text"

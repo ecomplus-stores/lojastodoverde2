@@ -8,11 +8,11 @@
       "admin.17b0db42664181ec48d4.js.map"
     ],
     "app-account": "chunk.690e5f770de10dc25f3e.js",
-    "app-checkout": "chunk.e309df004e8f4be7ca8a.js",
+    "app-checkout": "chunk.b5b280b7d4c5c19d811f.js",
     "app-confirmation": "chunk.45336b382842538909a7.js",
     "checkout": [
-      "checkout.8d65722d338cf537302a.js",
-      "checkout.8d65722d338cf537302a.js.map"
+      "checkout.0605099e24d88bb2f64b.js",
+      "checkout.0605099e24d88bb2f64b.js.map"
     ],
     "storefront": [
       "storefront.32bdcb384f805456cfbe.css",

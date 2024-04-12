@@ -226,13 +226,8 @@ export default {
       }
     },
 
-    localNotes: {
-      get () {
-        return `${this.guide ? this.guide.trim() + ';' : ''}${this.busAndParking ? this.busAndParking.trim() + ';' : ''}${this.dateAndTime ? this.dateAndTime.trim() + ';' : ''}${this.busLocation ? this.busLocation.trim() + ';' : ''}${this.shoppingAddress ? this.shoppingAddress.trim() : ''}`
-      },
-      set (notes) {
-        this.$emit('update:notes', `${this.guide ? this.guide.trim() + ';' : ''}${this.busAndParking ? this.busAndParking.trim() + ';' : ''}${this.dateAndTime ? this.dateAndTime.trim() + ';' : ''}${this.busLocation ? this.busLocation.trim() + ';' : ''}${this.shoppingAddress ? this.shoppingAddress.trim(): ''}`)
-      }
+    localNotes () {
+      return `${this.guide ? this.guide.trim() + ';' : ''}${this.busAndParking ? this.busAndParking.trim() + ';' : ''}${this.dateAndTime ? this.dateAndTime.trim() + ';' : ''}${this.busLocation ? this.busLocation.trim() + ';' : ''}${this.shoppingAddress ? this.shoppingAddress.trim() : ''}`
     },
 
     shownCheckoutStep () {
@@ -355,6 +350,9 @@ export default {
   },
 
   watch: {
+    localNotes (notes) {
+      this.$emit('update:notes', notes)
+    },
     customerEmail (email) {
       if (email) {
         if (this.customer.main_email !== email) {
